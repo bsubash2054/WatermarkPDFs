@@ -19,8 +19,8 @@ watermark_page = watermark_pdf.getPage(0) #get PDF Page of Watermark
 
 for filename in os.listdir(directory):   #loop via all pdfs placed in the directory 'in-pdf'
     if filename.endswith(".pdf"): #Take only pdf files to watermark
-        input_file = "in-pdf/"+filename #place your files to watermark in this directory
-        output_file = "out-pdf/"+filename #Watermarked files appear here after being watermarked
+        input_file = "in-pdf/" + filename #place your files to watermark in this directory
+        output_file = "out-pdf/" + filename #Watermarked files appear here after being watermarked
 
         with open(input_file, 'rb') as f:
             pdf_reader = PdfFileReader(f)
